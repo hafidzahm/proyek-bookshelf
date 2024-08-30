@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshelf Apps</title>
+</head>
+
+<body>
+    <div>
+        <header>
+            <h1>Bookshelf Apps</h1>
+        </header>
+    </div>
+    <!-- bagian judul -->
+    <div id="content">
+        <main>
+            <!-- Bagian form buku baru -->
+            <section class="wrapper card" >
+                <h1>Masukan buku baru</h1>
+                <form class="form" action="#" id="form">
+                    <!-- input judul buku -->
+                    <div class="form-element">
+                        <label for="inputBookTitle">Judul buku</label>
+                        <input id="inputBookTitle" type="text" required>
+                    </div>
+                    <!-- input penulis buku -->
+                    <div class="form-element">
+                        <label for="inputBookAuthor">Penulis</label>
+                        <input id="inputBookAuthor" type="text" required>
+                    </div>
+                    <!-- input tahun terbit buku -->
+                    <div class="form-element">
+                        <label for="inputBookYear">Tahun terbit</label>
+                        <input id="inputBookYear" type="number" required>
+                    </div>
+                    <!-- checkbox buku selesai dibaca atau belum -->
+                    <div class="checkbox-element">
+                        <label for="inputBookIsComplete">Selesai dibaca</label>
+                        <input id="inputBookIsComplete" type="checkbox"></input>
+                    </div>
+                    <!-- button submit buku -->
+                    <div class="form-element center">
+                        <button id="bookSubmit" type="submit">Masukkan buku ke rak belum selesai
+                                dibaca</button>
+                    </div>
+
+                </form>
+            </section>
+            <section class="book-data-wrapper">
+
+                <section class="container card">
+                    <h2 class="container-header">Belum selesai dibaca</h2>
+                    <div class="list-item flex-box" id="books"></div>
+                </section>
+
+                <section class="container">
+                    <h2 class="container-header">Selesai dibaca</h2>
+                    <div class="list-item flex-box" id="completed-books"></div>
+                </section>
+            </section>
+        </main>
+    </div>
+
+    <script src="assets/index.js"></script>
+</body>
+
+</html>
